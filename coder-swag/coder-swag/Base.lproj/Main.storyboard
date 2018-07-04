@@ -81,17 +81,17 @@
                     <navigationItem key="navigationItem" title="CODDER SWAG" id="avJ-9X-2Hq"/>
                     <connections>
                         <outlet property="categoryTable" destination="rEF-hK-YJH" id="UCY-ba-vH2"/>
-                        <segue destination="7hF-W5-1qQ" kind="show" id="216-qA-BeZ"/>
+                        <segue destination="7hF-W5-1qQ" kind="show" identifier="ProductsVC" id="216-qA-BeZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1079.2" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="EeA-7U-S15">
             <objects>
-                <viewController id="7hF-W5-1qQ" sceneMemberID="viewController">
+                <viewController id="7hF-W5-1qQ" customClass="ProductsVC" customModule="coder_swag" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vf5-F2-3Cq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -116,7 +116,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Y6J-46-CD4" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ProductCell" id="Y6J-46-CD4" customClass="ProductCell" customModule="coder_swag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="175" height="276"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
@@ -180,10 +180,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="CZi-Eh-XBu"/>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="nhX-60-qc7" id="rS5-t9-DF4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BMe-hm-v92" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773.5999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="1865" y="134"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Szo-Nr-HNU">
@@ -195,6 +198,9 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.3411764705882353" green="0.15294117647058825" blue="0.15686274509803921" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="0.95294117649999999" green="0.95294117649999999" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </textAttributes>
